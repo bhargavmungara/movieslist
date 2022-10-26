@@ -18,7 +18,7 @@ Built With :
   
 # LightHouse Metrics
 
-Screenshot 2022-10-26 at 3.19.21 PM<img width="1440" alt="image" src="https://user-images.githubusercontent.com/59245935/197995522-7cf13cb6-d7e4-4129-b8b3-5f2ea91dd8d4.png">
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/59245935/197995522-7cf13cb6-d7e4-4129-b8b3-5f2ea91dd8d4.png">
 
 
   
