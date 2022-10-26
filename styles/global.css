@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+.all {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  --columns: 12;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.all article {
+  --width: 9;
+  --gap-constant: 0.3%;
+  --initialbasis: calc(var(--width, 0) / var(--columns, 16) * 100%);
+  --gap: calc(
+    (var(--columns, 16) - var(--width, 0)) * var(--gap-constant, 0.3%)
+  );
+  flex-basis: calc(var(--initialbasis) - var(--gap));
+}
+
+div img {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+div section {
+  --width: 9;
+  --gap-constant: 0.3%;
+  --initialbasis: calc(var(--width, 0) / var(--columns, 16) * 100%);
+  --gap: calc(
+    (var(--columns, 16) - var(--width, 0)) * var(--gap-constant, 0.3%)
+  );
+  flex-basis: calc(var(--initialbasis) - var(--gap));
+  font-size: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 2rem;
+}
+
+.over {
+  text-align: justify;
+}
+
+span {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 750px) {
+  .all article {
+    --width: 6;
+  }
+
+  div section {
+    --width: 8;
+  }
+}
+
+@media (min-width: 900px) {
+  .all article {
+    --width: 4;
+  }
+
+  div section {
+    --width: 5;
+  }
+}
